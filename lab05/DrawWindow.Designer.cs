@@ -55,7 +55,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "DrawWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "RectangleCanvas";
+            this.Text = "Canvas";
             this.Load += new System.EventHandler(this.DrawWindow_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DrawBox)).EndInit();
             this.ResumeLayout(false);

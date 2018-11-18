@@ -30,12 +30,14 @@
         {
             this.MainMenu = new System.Windows.Forms.MenuStrip();
             this.FileMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.прямоугольныйToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.круглыйToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.SizeBar = new System.Windows.Forms.TrackBar();
             this.ButtonColor = new System.Windows.Forms.Button();
             this.ColorPickerDialog = new System.Windows.Forms.ColorDialog();
-            this.прямоугольныйToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.круглыйToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.MainMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SizeBar)).BeginInit();
@@ -60,13 +62,29 @@
             this.FileMenuItem.Size = new System.Drawing.Size(45, 20);
             this.FileMenuItem.Text = "Файл";
             // 
+            // прямоугольныйToolStripMenuItem
+            // 
+            this.прямоугольныйToolStripMenuItem.Name = "прямоугольныйToolStripMenuItem";
+            this.прямоугольныйToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.прямоугольныйToolStripMenuItem.Text = "Прямоугольный";
+            this.прямоугольныйToolStripMenuItem.Click += new System.EventHandler(this.прямоугольныйToolStripMenuItem_Click);
+            // 
+            // круглыйToolStripMenuItem
+            // 
+            this.круглыйToolStripMenuItem.Name = "круглыйToolStripMenuItem";
+            this.круглыйToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.круглыйToolStripMenuItem.Text = "Круглый";
+            this.круглыйToolStripMenuItem.Click += new System.EventHandler(this.круглыйToolStripMenuItem_Click);
+            // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.SizeBar);
             this.panel1.Controls.Add(this.ButtonColor);
             this.panel1.Location = new System.Drawing.Point(0, 27);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(82, 88);
+            this.panel1.Size = new System.Drawing.Size(82, 161);
             this.panel1.TabIndex = 2;
             // 
             // SizeBar
@@ -86,19 +104,23 @@
             this.ButtonColor.UseVisualStyleBackColor = true;
             this.ButtonColor.Click += new System.EventHandler(this.ButtonColor_Click);
             // 
-            // прямоугольныйToolStripMenuItem
+            // textBox1
             // 
-            this.прямоугольныйToolStripMenuItem.Name = "прямоугольныйToolStripMenuItem";
-            this.прямоугольныйToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.прямоугольныйToolStripMenuItem.Text = "Прямоугольный";
-            this.прямоугольныйToolStripMenuItem.Click += new System.EventHandler(this.прямоугольныйToolStripMenuItem_Click);
+            this.textBox1.Location = new System.Drawing.Point(12, 83);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(57, 21);
+            this.textBox1.TabIndex = 4;
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
-            // круглыйToolStripMenuItem
+            // button1
             // 
-            this.круглыйToolStripMenuItem.Name = "круглыйToolStripMenuItem";
-            this.круглыйToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.круглыйToolStripMenuItem.Text = "Круглый";
-            this.круглыйToolStripMenuItem.Click += new System.EventHandler(this.круглыйToolStripMenuItem_Click);
+            this.button1.Location = new System.Drawing.Point(12, 110);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(57, 23);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Change";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MainWindow
             // 
@@ -110,7 +132,7 @@
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.MainMenu;
             this.Name = "MainWindow";
-            this.Text = "Paint";
+            this.Text = "Main";
             this.Load += new System.EventHandler(this.MainWindow_Load);
             this.MainMenu.ResumeLayout(false);
             this.MainMenu.PerformLayout();
@@ -132,6 +154,8 @@
         public System.Windows.Forms.TrackBar SizeBar;
         private System.Windows.Forms.ToolStripMenuItem прямоугольныйToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem круглыйToolStripMenuItem;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
