@@ -33,11 +33,11 @@
             this.прямоугольныйToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.круглыйToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SizeBar = new System.Windows.Forms.TrackBar();
             this.ButtonColor = new System.Windows.Forms.Button();
             this.ColorPickerDialog = new System.Windows.Forms.ColorDialog();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.MainMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SizeBar)).BeginInit();
@@ -59,20 +59,20 @@
             this.прямоугольныйToolStripMenuItem,
             this.круглыйToolStripMenuItem});
             this.FileMenuItem.Name = "FileMenuItem";
-            this.FileMenuItem.Size = new System.Drawing.Size(45, 20);
+            this.FileMenuItem.Size = new System.Drawing.Size(48, 20);
             this.FileMenuItem.Text = "Файл";
             // 
             // прямоугольныйToolStripMenuItem
             // 
             this.прямоугольныйToolStripMenuItem.Name = "прямоугольныйToolStripMenuItem";
-            this.прямоугольныйToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.прямоугольныйToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.прямоугольныйToolStripMenuItem.Text = "Прямоугольный";
             this.прямоугольныйToolStripMenuItem.Click += new System.EventHandler(this.прямоугольныйToolStripMenuItem_Click);
             // 
             // круглыйToolStripMenuItem
             // 
             this.круглыйToolStripMenuItem.Name = "круглыйToolStripMenuItem";
-            this.круглыйToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.круглыйToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.круглыйToolStripMenuItem.Text = "Круглый";
             this.круглыйToolStripMenuItem.Click += new System.EventHandler(this.круглыйToolStripMenuItem_Click);
             // 
@@ -86,6 +86,24 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(82, 161);
             this.panel1.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(12, 110);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(57, 23);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Смена";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(12, 83);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(57, 20);
+            this.textBox1.TabIndex = 4;
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // SizeBar
             // 
@@ -103,24 +121,6 @@
             this.ButtonColor.TabIndex = 2;
             this.ButtonColor.UseVisualStyleBackColor = true;
             this.ButtonColor.Click += new System.EventHandler(this.ButtonColor_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(12, 83);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(57, 21);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(12, 110);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(57, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Change";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MainWindow
             // 
