@@ -41,6 +41,16 @@ namespace lab05
             dw.drawType = canvas.GetCanvasType();
             dw.DrawBox = canvas.SetDrawBox(dw.DrawBox);
             dw.MdiParent = this;
+
+            /*if (dw.drawType == "Circle")
+            {
+                dw.iscircle = true;
+            }
+            else
+            {
+                dw.iscircle = false;
+            }*/
+
             dw.Show();
         }
 

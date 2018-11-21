@@ -30,6 +30,7 @@
         {
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.DrawBox = new System.Windows.Forms.PictureBox();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.DrawBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,6 +46,11 @@
             this.DrawBox.MouseMove += new System.Windows.Forms.MouseEventHandler(this.DrawBox_MouseMove);
             this.DrawBox.MouseUp += new System.Windows.Forms.MouseEventHandler(this.DrawBox_MouseUp);
             // 
+            // saveFileDialog1
+            // 
+            this.saveFileDialog1.Filter = "Image files(*.png)|*.png|Image files(*.jpg)|*.jpg|Image files(*.bmp)|*.bmp|All fi" +
+    "les|*.*";
+            // 
             // DrawWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -57,6 +63,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Canvas";
             this.Load += new System.EventHandler(this.DrawWindow_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DrawWindow_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.DrawBox)).EndInit();
             this.ResumeLayout(false);
 
@@ -65,5 +72,6 @@
         #endregion
         private System.Windows.Forms.ColorDialog colorDialog1;
         public System.Windows.Forms.PictureBox DrawBox;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
